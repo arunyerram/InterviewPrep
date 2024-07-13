@@ -5,7 +5,7 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 import { FaMicrophone } from 'react-icons/fa'
 import { useSpeechSynthesis } from 'react-speech-kit'
 
-const API_KEY = "sk-proj-dao3F12EWtLsRjTRQ9e5T3BlbkFJvrlJRwx0c2uNxtvHrnwk";
+const API_KEY = "";
 
 const systemMessage = {
   "role": "system",

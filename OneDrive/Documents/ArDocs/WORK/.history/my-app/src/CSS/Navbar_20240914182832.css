@@ -1,0 +1,51 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Added more padding for spacing */
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 10px; /* Added space from the top */
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 auto; /* Centering */
+  }
+  
+  /* Logo */
+  .navbar-logo h1 {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  /* Links */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-links li {
+    margin: 0 20px;
+  }
+  
+  .navbar-links .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Smooth scroll on hover */
+  .navbar-links .nav-link:hover {
+    color: #ffcc00;
+  }
+  
+  /* Change background on scroll */
+  .window-scroll .navbar {
+    background-color: #222;
+  }
+  

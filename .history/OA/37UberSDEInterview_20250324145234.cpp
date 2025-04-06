@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+
+    return 0;
+}
+
+
+// a-3
+// b- 3
+// c - 2
+// 

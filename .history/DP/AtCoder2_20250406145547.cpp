@@ -22,7 +22,6 @@ int main() {
     //cout<<dp[2]<<"\n";
     i = 3 ; 
     while(i<=n){
-        
         ll answer = 1e18 ; 
         ll j = 1 ; 
         while(j<=k && i-j>=1){

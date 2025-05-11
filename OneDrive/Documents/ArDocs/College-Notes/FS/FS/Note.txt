@@ -1,0 +1,11 @@
+philosophy of Object Oriented Design:- 
+Ask not what the system does 
+Ask what it does too.
+
+It is better to get a compile time error than runtime exception.
+
+singleTon is a Design Pattern.
+To create a singleTon  we go through 3 steps:
+Declare a data member i.e static.
+Define the constructor as private.
+Define a static member functionwhich the end users can that internally creates instance for us.

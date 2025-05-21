@@ -70,5 +70,11 @@
       "database": "practice",
       "username": "root"
     }
-  ]
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }

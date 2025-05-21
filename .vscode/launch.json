@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/Yerram Abhilash/OneDrive/Documents/ArDocs/CodingPrepInterview/DailySessions",
+      "program": "c:/Users/Yerram Abhilash/OneDrive/Documents/ArDocs/CodingPrepInterview/DailySessions/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

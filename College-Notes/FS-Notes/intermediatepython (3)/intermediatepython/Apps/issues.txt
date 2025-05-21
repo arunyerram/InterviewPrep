@@ -1,0 +1,10 @@
+# Type   Code -> ProjectCode  Count
+Bugs 1 -> 11 [Count=25];
+Bugs 1 -> 21 [Count=23];
+Counts 2 -> 31 [Count=17];
+Fixed 3 -> 41 [Count=12];
+Open 4 -> 51 [Count=1];
+Bugs 1 -> 62 [Count=50];
+Counts 2 -> 72 [Count=7];
+Fixed 3 -> 62 [Count=27];
+Open 4 -> 62 [Count=23];

@@ -1,0 +1,32 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+// ..........GRAPH...............
+int main(){
+    int t;
+    cin>>t;
+
+    while(t){
+        int n,c;
+        cin >> n >> c;
+        vector<int>v;
+        for(int i=0;i<n;i++){
+            int x;
+            cin >> x;
+            v.push_back(x);
+        }
+        
+
+    }
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    for(int i=0;i<n;i++){
+        cin >> v[i];
+    }
+
+    
+
+}

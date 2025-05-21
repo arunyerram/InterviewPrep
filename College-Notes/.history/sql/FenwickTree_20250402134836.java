@@ -1,0 +1,32 @@
+package sql;
+import java.util.*;
+public class FenwickTree {
+    int[] nums;
+    int[] BIT;
+    int n;
+
+
+    public static void main(String[] args){
+        int n,k;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        k = sc.nextInt();
+
+        int[] ar = new int[n];
+        for(int i=0;i<n;i++){
+            ar[i] = sc.nextInt();
+        }
+
+        while(k-- > 0){
+            int a,b,c;
+            a = sc.nextInt();
+            b = sc.nextInt();
+            c = sc.nextInt();
+
+            if(a == 1){
+                System.out.println();
+            }
+        } 
+
+    }
+}

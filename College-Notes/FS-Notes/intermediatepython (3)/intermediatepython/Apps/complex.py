@@ -1,0 +1,8 @@
+print(complex(2, 1))
+print(2 * complex(2, 1))
+print(3J + complex(2, 1))
+print(4J - complex(1j))
+print(complex(1, 2) + complex(3, 4))
+print(complex(1, 2) * complex(3, 4))
+print(complex(1, 2) - complex(3, 4))
+print(complex(1, 2) / complex(3, 4))

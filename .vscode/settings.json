@@ -76,5 +76,6 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  }
+  },
+  "java.compile.nullAnalysis.mode": "automatic"
 }

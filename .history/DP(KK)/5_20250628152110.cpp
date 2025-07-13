@@ -1,0 +1,129 @@
+// Paypal OA
+
+
+// Paypal OA :-> Find the largest valid substring - Valid string is a string where adjacent pair of char have diff<=k  
+
+// -> dp[i] = largest valid substring ending at index “i” 
+
+// -> if(abs(s[i-1]-s[i])<=k){
+//     -> dp[i] = 1 + dp[i-1]
+// }else{
+//     -> dp[i] = 1 
+// }
+
+// -> Max(dp[1],dp[2],dp[3],..................dp[n])
+// -> once you know the max value find the smallest index “i” such that dp[i] = max; and from there print the string 
+
+
+#include <iostream>
+#include <vector>
+#include <cmath>  // For abs() function
+using namespace std;
+
+int main() {
+    int n, k;
+    cin >> n >> k;  // Read n and k
+    string s;
+    cin >> s;  // Read the input string
+
+    vector<int> dp(n, 1);  // DP array to store the length of the largest valid substring ending at index i
+    int max_len = 1;  // To store the maximum length of valid substring
+    int max_index = 0;  // To store the index where max_len ends
+
+    // Fill the dp array
+    for (int i = 1; i < n; i++) {
+        if (abs(s[i] - s[i - 1]) <= k) {
+            dp[i] = dp[i - 1] + 1;  // Extend the valid substring
+        } else {
+            dp[i] = 1;  // Reset to 1 if the condition doesn't hold
+        }
+
+        // Update max_len and max_index if we find a longer valid substring
+        if (dp[i] > max_len) {
+            max_len = dp[i];
+            max_index = i;
+        }
+    }
+
+    // Print the largest valid substring
+    int start_index = max_index - max_len + 1;
+    cout << s.substr(start_index, max_len) << endl;
+
+    return 0;
+}
+
+
+
+// import java.util.Scanner;
+
+// public class Main {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+        
+//         int n = sc.nextInt();  // Read n
+//         int k = sc.nextInt();  // Read k
+//         sc.nextLine();  // Consume newline after integers
+//         String s = sc.nextLine();  // Read the input string
+        
+//         int[] dp = new int[n];
+//         dp[0] = 1;  // The first character is always a valid substring of length 1
+        
+//         int maxLen = 1;  // The maximum length of valid substring
+//         int maxIndex = 0;  // The index where the maximum valid substring ends
+        
+//         // Fill the dp array
+//         for (int i = 1; i < n; i++) {
+//             if (Math.abs(s.charAt(i) - s.charAt(i - 1)) <= k) {
+//                 dp[i] = dp[i - 1] + 1;  // Extend the valid substring
+//             } else {
+//                 dp[i] = 1;  // Start a new valid substring
+//             }
+            
+//             // Update maxLen and maxIndex if a longer valid substring is found
+//             if (dp[i] > maxLen) {
+//                 maxLen = dp[i];
+//                 maxIndex = i;
+//             }
+//         }
+        
+//         // Get the start index of the largest valid substring
+//         int startIndex = maxIndex - maxLen + 1;
+        
+//         // Print the largest valid substring
+//         System.out.println(s.substring(startIndex, startIndex + maxLen));
+        
+//         sc.close();
+//     }
+// }
+
+
+
+// def main():
+//     n, k = map(int, input().split())  # Read n and k
+//     s = input().strip()  # Read the input string
+
+//     dp = [0] * n  # DP array to store the largest valid substring ending at index i
+//     dp[0] = 1  # The first character is always a valid substring of length 1
+
+//     max_len = 1  # To store the maximum length of valid substring
+//     max_index = 0  # To store the index where max_len ends
+
+//     # Fill the dp array
+//     for i in range(1, n):
+//         if abs(ord(s[i]) - ord(s[i - 1])) <= k:
+//             dp[i] = dp[i - 1] + 1  # Extend the valid substring
+//         else:
+//             dp[i] = 1  # Start a new valid substring
+
+//         # Update max_len and max_index if we find a longer valid substring
+//         if dp[i] > max_len:
+//             max_len = dp[i]
+//             max_index = i
+
+//     # Print the largest valid substring
+//     start_index = max_index - max_len + 1
+//     print(s[start_index:start_index + max_len])
+
+// if __name__ == "__main__":
+//     main()

@@ -26,8 +26,8 @@ public class IndexPairs {
                 if (cur.isEnd) out.add(new int[]{i, j});
             }
         }
-        // return out.toArray(new int[out.size()][]);
         return out.toArray(new int[out.size()][]);
+        return out.toArray()
     }
 
     static class TrieNode{
